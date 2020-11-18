@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+}
+.side{
+    width: 23rem;
+    height: 17.5rem;
+    background-color: #790a22;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius:22px 173px;
+    border-bottom-right-radius:22px 173px ;
+    position: absolute;
+    top: 50px;
+    left: 485px;
+}
+
+.calculator {
+    font-size: 20px;
+    width: 18rem;
+    height: 33.5rem;
+    background-color: #790a22;
+    border-bottom-left-radius: 100px 30px;
+    border-bottom-right-radius: 100px 30px;
+    position: relative;
+    top: 50px;
+    left: 500px;
+    padding: 1.5rem;
+    color: rgb(200, 218, 233);
+    font-family: Helvetica;
+    margin: 0;
+    border: 1px solid black;
+}
+
+ .logo, .model, .type {
+    font-size: 90%;
+} 
+
+.logo {
+    font-family:Impact;
+}
+
+.model {
+    float: right;
+    font-style: italic;
+    font-family: CMU;
+}
+
+
+.type {
+    text-align: center;
+    display: block;
+    color: rgb(221, 133, 144);
+    margin-top: .75em;
+    font-family: pirulen;
+}
+
+.screen {
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(197, 210, 231);
+    border-radius: 4px;
+    box-shadow: 0 0 5px black;
+    margin: 1em 0;
+    color: black;
+}
+
+.screen .input {
+    font-family: monospace;
+    font-size: 1rem;
+    position: relative;
+    top: 12px;
+    left: 12px;
+    background-color: rgb(197, 210, 231);
+    border: none;
+}
+
+.screen .main-display {
+    font-family: monospace;
+    font-size: 2rem;
+    text-align: right;
+    width: 275.2px;
+    display: block;
+    padding: .4rem;
+}
+
+button {
+    text-align: center;
+    color: rgb(200, 218, 233);
+    position: relative;
+    box-shadow: 2px 2px 5px 0 rgb(14, 8, 8);
+}
+
+table {
+    width: 100%;
+}
+
+.modifiers {
+    margin: 1.5rem 0 1.75rem 0;
+}
+
+.modifiers button {
+    width: 2.35rem;
+    height: 1.25rem;
+    border-radius: 15px;
+    margin-right: .75rem;
+    background: rgb(154, 157, 180);
+}
+
+.modifiers button::before, .modifiers button::after {
+    text-transform: uppercase;
+}
+
+
+.shift {
+    left: 0;
+}
+
+.alpha {
+    top: 11px;
+}
+
+.mode {
+    float: right;
+    top: 11px;
+}
+
+.on {
+    float: right;
+    margin-right: 0 !important;
+}
+
+.shift::before {content: "Shift";}
+.alpha::after {content: "Alpha";}
+.mode::before {content: "Mode"; left: -9px}
+.mode::after {content: "CLR"; right: -9px; color:rgb(221, 182, 109);}
+.on::before {content: "ON";}
+
+.replay {
+    background: rgb(154, 157, 180);
+    width: 78px;
+    height: 70px;
+    /* line-height: 70px; */
+    position: absolute;
+    left: 39%;
+    top: 33%;
+    border-radius: 125px;
+    text-transform: uppercase;
+    font-size: 9px;
+    /* text-align: center; */
+    box-shadow: 2px 2px 5px 0 rgb(14, 8, 8);
+}
+
+#arrow-top{
+    position: relative;
+    top: 1px;
+    left:35px;
+}
+#arrow-bottom{
+    position: relative;
+    top: 41px;
+    left:35px;
+}
+#arrow-left{
+    position: relative;
+    top: 28px;
+    left:-6px;
+}
+#arrow-right{
+    position: relative;
+    top: 28px;
+    left:5px;
+}
+#replay-text{
+    position: relative;
+    top: 29px;
+    left:0px;
+}
+
+
+.function-keys {
+    margin: 1.5rem 0 .75rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.function-keys button {
+    background: rgb(27, 66, 78);
+    font-size: 12px;
+    width: 2.25rem;
+    height: 1.5rem;
+    margin: 0 10PX 13px 0;
+    border-radius: 5px;
+}
+
+.function-keys button:nth-child(6n){
+    margin-right: 0;
+}
+
+.basic-keys{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.basic-keys button {
+    width: 2.5rem;
+    height: 1.75rem;
+    background: rgb(154, 157, 180);
+    border-radius: 3px 3px 7px 7px;
+    margin: 0 15px 14px 0;
+
+}
+
+.basic-keys button:nth-child(5n){
+    margin-right: 0;
+}
+
+button.pink {
+    background: rgb(228, 152, 164);
+}
+
+button::before, button::after {
+    position: absolute;
+    font-size: 9px;
+    top: -13px;
+    width: 100%;
+    display: inline-block;
+}
+
+button::before {
+    color:rgb(221, 182, 109);
+    left: 0;
+    text-align: left;
+}
+
+button::after {
+    color: rgb(221, 133, 144);
+    right: 0;
+    text-align: right;
+}
+
+.center-shift::before, .center-alpha::after {
+    text-align: center;
+}
+
+.del::before {content: "INS";}
+.ac::before {content: "OFF";}
+.reciprocal::before {content: "x!";}
+.combin::before {content: "nPr";}
+.pol::before {content: "Rec(";}
+.pol::after {content: ":";}
+.cube::before {content: "\221b";}
+.frac::before {content: "d/c";}
+.pow::before {content: "ˣ \221A"}
+.log::before {content: "10 ˣ";}
+.ln::before {content: "e ˣ";}
+.ln::after {content: "e";}
+.minus::before {content: "";}
+.minus::after {content: "A";}
+.deg::before {content: "\2190";}
+.deg::after {content: "B";}
+.hyp::after {content: "C";}
+.sin::before {content: "sin \207b\b9";}
+.cos::before {content: "cos \207b\b9";}
+.tan::before {content: "tan \207b\b9";}
+.sin::after {content: "D";}
+.cos::after {content: "E";}
+.tan::after {content: "F";}
+.rcl::before {content: "STO";}
+.eng::before {content: "\2190";}
+.comma::before {content: ";";}
+.comma::after {content: "Y";}
+.mem-plus::before {content: "M-";}
+.mem-plus::after {content: "M";}
+.zero::before {content: "Rnd";}
+.period::before {content: "Ran#";}
+.exp::before {content: "\03c0";}
+.ans::before {content: "DRG\25ba";}
+.equals::before {content: "%";}
+.one::before {content: "S-SUM"; font-size: 8px;}
+.two::before {content: "S-VAR"; font-size: 8px;}
+.close-paren::after{content: "X";}
+
